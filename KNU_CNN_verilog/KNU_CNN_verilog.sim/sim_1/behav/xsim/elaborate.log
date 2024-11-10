@@ -1,0 +1,71 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_netlist_behav xil_defaultlib.tb_netlist xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_netlist.v:149]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/1_synth.v" Line 3. Module netlist doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Weight.v" Line 1. Module ROM_Weight(WEIGHT_FILE_conv1_1="./data/conv1_weight_1.txt",WEIGHT_FILE_conv1_2="./data/conv1_weight_2.txt",WEIGHT_FILE_conv1_3="./data/conv1_weight_3.txt",WEIGHT_FILE_conv2_11="./data/conv2_weight_11.txt",WEIGHT_FILE_conv2_12="./data/conv2_weight_12.txt",WEIGHT_FILE_conv2_13="./data/conv2_weight_13.txt",WEIGHT_FILE_conv2_21="./data/conv2_weight_21.txt",WEIGHT_FILE_conv2_22="./data/conv2_weight_22.txt",WEIGHT_FILE_conv2_23="./data/conv2_weight_23.txt",WEIGHT_FILE_conv2_31="./data/conv2_weight_31.txt",WEIGHT_FILE_conv2_32="./data/conv2_weight_32.txt",WEIGHT_FILE_conv2_33="./data/conv2_weight_33.txt") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Bias.v" Line 1. Module ROM_Bias(WEIGHT_FILE_bias_1="./data/conv1_bias.txt",WEIGHT_FILE_bias_2="./data/conv2_bias.txt") doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR3x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OA21x2_ASAP7_75t_R
+Compiling module xil_defaultlib.OR2x2_ASAP7_75t_R
+Compiling module xil_defaultlib.OAI21x1_ASAP7_75t_R
+Compiling module xil_defaultlib.INVx1_ASAP7_75t_R
+Compiling module xil_defaultlib.NAND2x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OA211x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AO21x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AND2x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AND3x1_ASAP7_75t_R
+Compiling module xil_defaultlib.BUFx2_ASAP7_75t_R
+Compiling module xil_defaultlib.XOR2x2_ASAP7_75t_R
+Compiling module xil_defaultlib.XNOR2x2_ASAP7_75t_R
+Compiling module xil_defaultlib.NOR2x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AOI21x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OAI22x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OA22x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AND4x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AND5x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO22x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OR4x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AOI211x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OR5x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO33x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AOI221x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO221x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO32x1_ASAP7_75t_R
+Compiling module xil_defaultlib.MAJx2_ASAP7_75t_R
+Compiling module xil_defaultlib.XNOR2x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO222x2_ASAP7_75t_R
+Compiling module xil_defaultlib.BUFx3_ASAP7_75t_R
+Compiling module xil_defaultlib.BUFx6f_ASAP7_75t_R
+Compiling module xil_defaultlib.AOI22x1_ASAP7_75t_R
+Compiling module xil_defaultlib.AO31x2_ASAP7_75t_R
+Compiling module xil_defaultlib.NAND3x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OA31x2_ASAP7_75t_R
+Compiling module xil_defaultlib.NOR3x1_ASAP7_75t_R
+Compiling module xil_defaultlib.OR3x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AND4x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AO211x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AND3x2_ASAP7_75t_R
+Compiling module xil_defaultlib.OR4x2_ASAP7_75t_R
+Compiling module xil_defaultlib.NAND2x2_ASAP7_75t_R
+Compiling module xil_defaultlib.AO21x2_ASAP7_75t_R
+Compiling module xil_defaultlib.BUFx4f_ASAP7_75t_R
+Compiling module xil_defaultlib.FAx1_ASAP7_75t_R
+Compiling module xil_defaultlib.HAxp5_ASAP7_75t_R
+Compiling module xil_defaultlib.TIELOx1_ASAP7_75t_R
+Compiling module xil_defaultlib.DFFHQNx1_ASAP7_75t_R
+Compiling module xil_defaultlib.DLLx1_ASAP7_75t_R
+Compiling module xil_defaultlib.netlist
+Compiling module xil_defaultlib.fc_weight_ROM(WEIGHT_FILE="./dat...
+Compiling module xil_defaultlib.fc_bias_ROM(BIAS_FILE="./data/fc...
+Compiling module xil_defaultlib.ROM_Weight(WEIGHT_FILE_conv1_1="...
+Compiling module xil_defaultlib.ROM_Bias(WEIGHT_FILE_bias_1="./d...
+Compiling module xil_defaultlib.tb_netlist
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_netlist_behav

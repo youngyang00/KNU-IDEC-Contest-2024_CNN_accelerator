@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  8 04:35:57 2024
+# Process ID: 5524
+# Current directory: D:/KNU_design_contest_2024/KNU_CNN_verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5916 D:\KNU_design_contest_2024\KNU_CNN_verilog\KNU_CNN_verilog.xpr
+# Log file: D:/KNU_design_contest_2024/KNU_CNN_verilog/vivado.log
+# Journal file: D:/KNU_design_contest_2024/KNU_CNN_verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.xpr
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+update_compile_order -fileset sources_1
+run all
+close_sim
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+relaunch_sim
+run all
+update_compile_order -fileset sources_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_netlist [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_netlist.tcl
+current_wave_config {tb_top_1000_behav.wcfg}
+add_wave {{/tb_netlist}} 
+relaunch_sim
+save_wave_config {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_netlist.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top_1000 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+current_wave_config {tb_top_1000_behav.wcfg}
+add_wave {{/tb_top_1000}} 
+relaunch_sim
+run all
+save_wave_config {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+current_wave_config {tb_top_1000_behav.wcfg}
+add_wave {{/tb_top_1000/TOP_inst/PE_inst/ACC_Ch1}} 
+relaunch_sim
+run 10 us
+save_wave_config {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_netlist [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_netlist.tcl
+current_wave_config {tb_top_1000_behav.wcfg}
+add_wave {{/tb_netlist}} 
+relaunch_sim
+save_wave_config {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg}
+close_sim

@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../KNU_CNN_verilog.srcs/source_1/1_synth.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/ROM_Bias.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/ROM_Weight.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/asap7sc7p5t_AO_RVT_TT_201020.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/asap7sc7p5t_INVBUF_RVT_TT_201020.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/asap7sc7p5t_OA_RVT_TT_201020.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/asap7sc7p5t_SEQ_RVT_TT_220101.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/asap7sc7p5t_SIMPLE_RVT_TT_201020.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/asap7_library/dff.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/fc_bias_ROM.v" \
+"../../../../KNU_CNN_verilog.srcs/source_1/fc_weight_ROM.v" \
+"../../../../KNU_CNN_verilog.srcs/sim_1/tb_netlist.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

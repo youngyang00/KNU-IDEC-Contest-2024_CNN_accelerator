@@ -1,0 +1,693 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  8 03:48:55 2024
+# Process ID: 16452
+# Current directory: D:/KNU_design_contest_2024/KNU_CNN_verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13320 D:\KNU_design_contest_2024\KNU_CNN_verilog\KNU_CNN_verilog.xpr
+# Log file: D:/KNU_design_contest_2024/KNU_CNN_verilog/vivado.log
+# Journal file: D:/KNU_design_contest_2024/KNU_CNN_verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/opqrs/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+set_property top tb_top_1000 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_weight_ROM.v" Line 1. Module fc_weight_ROM(WEIGHT_FILE="./data/fc_weight_transposed.txt") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_bias_ROM.v" Line 1. Module fc_bias_ROM(BIAS_FILE="./data/fc_bias.txt") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.global_controller
+Compiling module xil_defaultlib.conv2d_pe
+Compiling module xil_defaultlib.Accumulator
+Compiling module xil_defaultlib.PE_Array_default
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.Max_Pooling_ReLU
+Compiling module xil_defaultlib.buffer1
+Compiling module xil_defaultlib.shiftBuffer
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.matmul_default
+Compiling module xil_defaultlib.max_finder
+Compiling module xil_defaultlib.FC_layer
+Compiling module xil_defaultlib.FC_controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.fc_weight_ROM(WEIGHT_FILE="./dat...
+Compiling module xil_defaultlib.fc_bias_ROM(BIAS_FILE="./data/fc...
+Compiling module xil_defaultlib.ROM_Weight(WEIGHT_FILE_conv1_1="...
+Compiling module xil_defaultlib.ROM_Bias(WEIGHT_FILE_bias_1="./d...
+Compiling module xil_defaultlib.tb_top_1000
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_1000_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_1000_behav -key {Behavioral:sim_1:Functional:tb_top_1000} -tclbatch {tb_top_1000.tcl} -view {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg} -view {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+WARNING: Simulation object /tb_top/clk was not found in the design.
+WARNING: Simulation object /tb_top/rstn was not found in the design.
+WARNING: Simulation object /tb_top/start_i was not found in the design.
+WARNING: Simulation object /tb_top/pixels was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_1 was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_2 was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_3 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_11 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_12 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_13 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_21 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_22 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_23 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_31 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_32 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_33 was not found in the design.
+WARNING: Simulation object /tb_top/image_6rows was not found in the design.
+WARNING: Simulation object /tb_top/zero_bias was not found in the design.
+WARNING: Simulation object /tb_top/cycle was not found in the design.
+WARNING: Simulation object /tb_top/image_idx was not found in the design.
+WARNING: Simulation object /tb_top/weight_sel was not found in the design.
+WARNING: Simulation object /tb_top/bias_sel was not found in the design.
+WARNING: Simulation object /tb_top/image_rom_en was not found in the design.
+WARNING: Simulation object /tb_top/weight_input_packed was not found in the design.
+WARNING: Simulation object /tb_top/weight_enable was not found in the design.
+WARNING: Simulation object /tb_top/weight_indexing was not found in the design.
+WARNING: Simulation object /tb_top/fc_bias was not found in the design.
+WARNING: Simulation object /tb_top/bias_in was not found in the design.
+WARNING: Simulation object /tb_top/conv1_bias was not found in the design.
+WARNING: Simulation object /tb_top/conv2_bias was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in1 was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in2 was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in3 was not found in the design.
+WARNING: Simulation object /tb_top/done was not found in the design.
+WARNING: Simulation object /tb_top/ready was not found in the design.
+WARNING: Simulation object /tb_top/result was not found in the design.
+WARNING: Simulation object /tb_top/i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter1_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter2_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter3_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/bias_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out1 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out2 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out3 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/shift_reg was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_out was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch2/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch2/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch3/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch3/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer1/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer2/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer3/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/flatten_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/weight_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/data_out was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/bias_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/matmul_inst/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/result_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/valid_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/inputs_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/result_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/input_wires was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/max_index was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/i was not found in the design.
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1626.129 ; gain = 13.414
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_1000_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1626.129 ; gain = 17.262
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Accumulator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Max_Pooling_ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Max_Pooling_ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/PE_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/buffer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/conv2d_pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_bias_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_bias_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_weight_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_weight_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/global_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/matmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/max_finder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_finder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/shiftBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_1000
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.global_controller
+Compiling module xil_defaultlib.conv2d_pe
+Compiling module xil_defaultlib.Accumulator
+Compiling module xil_defaultlib.PE_Array_default
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.Max_Pooling_ReLU
+Compiling module xil_defaultlib.buffer1
+Compiling module xil_defaultlib.shiftBuffer
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.matmul_default
+Compiling module xil_defaultlib.max_finder
+Compiling module xil_defaultlib.FC_layer
+Compiling module xil_defaultlib.FC_controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.fc_weight_ROM(WEIGHT_FILE="./dat...
+Compiling module xil_defaultlib.fc_bias_ROM(BIAS_FILE="./data/fc...
+Compiling module xil_defaultlib.ROM_Weight(WEIGHT_FILE_conv1_1="...
+Compiling module xil_defaultlib.ROM_Bias(WEIGHT_FILE_bias_1="./d...
+Compiling module xil_defaultlib.tb_top_1000
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_1000_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1626.129 ; gain = 0.000
+current_wave_config {tb_top_1000_behav.wcfg}
+tb_top_1000_behav.wcfg
+add_wave {{/tb_top_1000/TOP_inst/controller/current_state}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1995.027 ; gain = 0.000
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Accumulator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Max_Pooling_ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Max_Pooling_ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/PE_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/buffer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/conv2d_pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_bias_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_bias_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_weight_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_weight_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/global_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/matmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/max_finder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_finder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/shiftBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_1000
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2408.539 ; gain = 322.340
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.global_controller
+Compiling module xil_defaultlib.conv2d_pe
+Compiling module xil_defaultlib.Accumulator
+Compiling module xil_defaultlib.PE_Array_default
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.Max_Pooling_ReLU
+Compiling module xil_defaultlib.buffer1
+Compiling module xil_defaultlib.shiftBuffer
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.matmul_default
+Compiling module xil_defaultlib.max_finder
+Compiling module xil_defaultlib.FC_layer
+Compiling module xil_defaultlib.FC_controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.fc_weight_ROM(WEIGHT_FILE="./dat...
+Compiling module xil_defaultlib.fc_bias_ROM(BIAS_FILE="./data/fc...
+Compiling module xil_defaultlib.ROM_Weight(WEIGHT_FILE_conv1_1="...
+Compiling module xil_defaultlib.ROM_Bias(WEIGHT_FILE_bias_1="./d...
+Compiling module xil_defaultlib.tb_top_1000
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_1000_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 87 ns  Iteration: 10000
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 2421.848 ; gain = 335.648
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+save_wave_config {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_1000_behav -key {Behavioral:sim_1:Functional:tb_top_1000} -tclbatch {tb_top_1000.tcl} -view {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg} -view {D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+WARNING: Simulation object /tb_top/clk was not found in the design.
+WARNING: Simulation object /tb_top/rstn was not found in the design.
+WARNING: Simulation object /tb_top/start_i was not found in the design.
+WARNING: Simulation object /tb_top/pixels was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_1 was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_2 was not found in the design.
+WARNING: Simulation object /tb_top/conv1_weight_3 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_11 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_12 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_13 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_21 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_22 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_23 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_31 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_32 was not found in the design.
+WARNING: Simulation object /tb_top/conv2_weight_33 was not found in the design.
+WARNING: Simulation object /tb_top/image_6rows was not found in the design.
+WARNING: Simulation object /tb_top/zero_bias was not found in the design.
+WARNING: Simulation object /tb_top/cycle was not found in the design.
+WARNING: Simulation object /tb_top/image_idx was not found in the design.
+WARNING: Simulation object /tb_top/weight_sel was not found in the design.
+WARNING: Simulation object /tb_top/bias_sel was not found in the design.
+WARNING: Simulation object /tb_top/image_rom_en was not found in the design.
+WARNING: Simulation object /tb_top/weight_input_packed was not found in the design.
+WARNING: Simulation object /tb_top/weight_enable was not found in the design.
+WARNING: Simulation object /tb_top/weight_indexing was not found in the design.
+WARNING: Simulation object /tb_top/fc_bias was not found in the design.
+WARNING: Simulation object /tb_top/bias_in was not found in the design.
+WARNING: Simulation object /tb_top/conv1_bias was not found in the design.
+WARNING: Simulation object /tb_top/conv2_bias was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in1 was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in2 was not found in the design.
+WARNING: Simulation object /tb_top/conv_weight_in3 was not found in the design.
+WARNING: Simulation object /tb_top/done was not found in the design.
+WARNING: Simulation object /tb_top/ready was not found in the design.
+WARNING: Simulation object /tb_top/result was not found in the design.
+WARNING: Simulation object /tb_top/i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter1_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter2_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/filter3_weights was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/bias_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out1 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out2 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/conv_out3 was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/shift_reg was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch1/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch2/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/data_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/valid_in_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/FIFO_Ch3/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/data_out was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch1/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch2/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch2/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch3/data_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/MaxPooling_Ch3/data_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF1/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF2/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/din_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/dout_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/BUF3/mem was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch1/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch2/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/bias_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/conv_in was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/conv_sum was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/acc_full_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/acc was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/wr_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/rd_ptr was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/cycle_count was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/PE_inst/ACC_Ch3/signed_bias was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer1/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer2/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/shiftBuffer3/register was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/flatten_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/weight_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/data_out was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/bias_input_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/matmul_inst/data_out_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/result_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/valid_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/inputs_i was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/result_o was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/input_wires was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/max_value was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/max_index was not found in the design.
+WARNING: Simulation object /tb_top/TOP_inst/fc_layer/max_finder_inst/i was not found in the design.
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_top_1000.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 87 ns  Iteration: 10000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_1000_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2421.848 ; gain = 0.000
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_1000' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_1000_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Accumulator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FC_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/Max_Pooling_ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Max_Pooling_ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/PE_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/ROM_Weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/buffer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/conv2d_pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_bias_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_bias_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/fc_weight_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_weight_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/global_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/matmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/max_finder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_finder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/shiftBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/source_1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_1000
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2670.180 ; gain = 248.332
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim'
+"xelab -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f56de015da3246728a8e513befab3aea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_1000_behav xil_defaultlib.tb_top_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'bias_idx' [D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.srcs/sim_1/tb_top_1000.v:149]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.global_controller
+Compiling module xil_defaultlib.conv2d_pe
+Compiling module xil_defaultlib.Accumulator
+Compiling module xil_defaultlib.PE_Array_default
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.Max_Pooling_ReLU
+Compiling module xil_defaultlib.buffer1
+Compiling module xil_defaultlib.shiftBuffer
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.matmul_default
+Compiling module xil_defaultlib.max_finder
+Compiling module xil_defaultlib.FC_layer
+Compiling module xil_defaultlib.FC_controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.fc_weight_ROM(WEIGHT_FILE="./dat...
+Compiling module xil_defaultlib.fc_bias_ROM(BIAS_FILE="./data/fc...
+Compiling module xil_defaultlib.ROM_Weight(WEIGHT_FILE_conv1_1="...
+Compiling module xil_defaultlib.ROM_Bias(WEIGHT_FILE_bias_1="./d...
+Compiling module xil_defaultlib.tb_top_1000
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_1000_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1

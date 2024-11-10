@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  8 03:46:28 2024
+# Process ID: 12808
+# Current directory: D:/KNU_design_contest_2024/KNU_CNN_verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13532 D:\KNU_design_contest_2024\KNU_CNN_verilog\KNU_CNN_verilog.xpr
+# Log file: D:/KNU_design_contest_2024/KNU_CNN_verilog/vivado.log
+# Journal file: D:/KNU_design_contest_2024/KNU_CNN_verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/KNU_design_contest_2024/KNU_CNN_verilog/KNU_CNN_verilog.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_behav.wcfg
+open_wave_config D:/KNU_design_contest_2024/KNU_CNN_verilog/tb_top_1000_behav.wcfg
+source tb_netlist.tcl
+current_wave_config {tb_top_1000_behav.wcfg}
+add_wave {{/tb_netlist}} 
+relaunch_sim

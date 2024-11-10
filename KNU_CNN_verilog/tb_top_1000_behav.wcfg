@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_1000_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_1000" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="499775000000fs"></ZoomStartTime>
+      <ZoomEndTime time="500915000001fs"></ZoomEndTime>
+      <Cursor1Time time="500725000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="195"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="43" />
+   <wvobject fp_name="/tb_top_1000/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/start_i" type="logic">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/true_labels" type="array">
+      <obj_property name="ElementShortName">true_labels[0:999][3:0]</obj_property>
+      <obj_property name="ObjectShortName">true_labels[0:999][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv1_weight_1" type="array">
+      <obj_property name="ElementShortName">conv1_weight_1[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_weight_1[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv1_weight_2" type="array">
+      <obj_property name="ElementShortName">conv1_weight_2[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_weight_2[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv1_weight_3" type="array">
+      <obj_property name="ElementShortName">conv1_weight_3[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_weight_3[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/bias_1" type="array">
+      <obj_property name="ElementShortName">bias_1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_11" type="array">
+      <obj_property name="ElementShortName">conv2_weight_11[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_11[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_12" type="array">
+      <obj_property name="ElementShortName">conv2_weight_12[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_12[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_13" type="array">
+      <obj_property name="ElementShortName">conv2_weight_13[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_13[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_21" type="array">
+      <obj_property name="ElementShortName">conv2_weight_21[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_21[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_22" type="array">
+      <obj_property name="ElementShortName">conv2_weight_22[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_22[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_23" type="array">
+      <obj_property name="ElementShortName">conv2_weight_23[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_23[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_31" type="array">
+      <obj_property name="ElementShortName">conv2_weight_31[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_31[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_32" type="array">
+      <obj_property name="ElementShortName">conv2_weight_32[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_32[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_weight_33" type="array">
+      <obj_property name="ElementShortName">conv2_weight_33[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_weight_33[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/bias_2" type="array">
+      <obj_property name="ElementShortName">bias_2[23:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_2[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/image_6rows" type="array">
+      <obj_property name="ElementShortName">image_6rows[71:0]</obj_property>
+      <obj_property name="ObjectShortName">image_6rows[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/done_z" type="array">
+      <obj_property name="ElementShortName">done_z[3:0]</obj_property>
+      <obj_property name="ObjectShortName">done_z[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/cycle" type="array">
+      <obj_property name="ElementShortName">cycle[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/image_idx" type="array">
+      <obj_property name="ElementShortName">image_idx[9:0]</obj_property>
+      <obj_property name="ObjectShortName">image_idx[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/weight_sel" type="array">
+      <obj_property name="ElementShortName">weight_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/bias_sel" type="array">
+      <obj_property name="ElementShortName">bias_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/image_rom_en" type="logic">
+      <obj_property name="ElementShortName">image_rom_en</obj_property>
+      <obj_property name="ObjectShortName">image_rom_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/weight_input_packed" type="array">
+      <obj_property name="ElementShortName">weight_input_packed[79:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_input_packed[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/weight_enable" type="logic">
+      <obj_property name="ElementShortName">weight_enable</obj_property>
+      <obj_property name="ObjectShortName">weight_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/weight_indexing" type="array">
+      <obj_property name="ElementShortName">weight_indexing[5:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_indexing[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/fc_bias" type="array">
+      <obj_property name="ElementShortName">fc_bias[79:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_bias[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/zero_bias" type="array">
+      <obj_property name="ElementShortName">zero_bias[23:0]</obj_property>
+      <obj_property name="ObjectShortName">zero_bias[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/bias_in" type="array">
+      <obj_property name="ElementShortName">bias_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv1_bias" type="array">
+      <obj_property name="ElementShortName">conv1_bias[23:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_bias[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv2_bias" type="array">
+      <obj_property name="ElementShortName">conv2_bias[23:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_bias[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv_weight_in1" type="array">
+      <obj_property name="ElementShortName">conv_weight_in1[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_weight_in1[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv_weight_in2" type="array">
+      <obj_property name="ElementShortName">conv_weight_in2[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_weight_in2[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/conv_weight_in3" type="array">
+      <obj_property name="ElementShortName">conv_weight_in3[199:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_weight_in3[199:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/result" type="array">
+      <obj_property name="ElementShortName">result[3:0]</obj_property>
+      <obj_property name="ObjectShortName">result[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/img_offset" type="array">
+      <obj_property name="ElementShortName">img_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">img_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/accuracy" type="array">
+      <obj_property name="ElementShortName">accuracy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">accuracy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/img_count" type="array">
+      <obj_property name="ElementShortName">img_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">img_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_1000/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>
