@@ -68,6 +68,9 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 ---
 
 ### 2. **Max Pooling and ReLU Module**
+![image](https://github.com/user-attachments/assets/81082fe6-5c96-41e9-9b4c-5ca79ebbbea6)
+
+
    - Processes the output of the PE Array by:
      - Selecting the maximum value from each feature map region (Max Pooling).
      - Applying the ReLU activation function to eliminate negative values.
@@ -79,6 +82,8 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 ---
 
 ### 3. **Shift Buffer**
+![image](https://github.com/user-attachments/assets/75cb7970-aa97-4c21-9fd2-369ccbf886dc)
+
    - Temporarily stores and organizes intermediate data from convolutional layers for processing by the Fully Connected (FC) Layer.
    - **Key Features**:
      - Shift-based data handling avoids traditional address-based memory access.
@@ -90,6 +95,8 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 ---
 
 ### 4. **Fully Connected (FC) Layer**
+![image](https://github.com/user-attachments/assets/48e135ae-b0c6-4d8a-989c-5d135068bff5)
+
    - Performs final classification using:
      - A **matrix multiplication module (matmul)** for processing flattened data.
      - A **maximum value finder (max_finder)** to identify the highest confidence class.
@@ -106,6 +113,8 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 ## 🧪 Simulation and Results
 
 ### 1. Accuracy
+![image](https://github.com/user-attachments/assets/22cacd14-76f1-4327-9d4c-06f8429576f5)
+
 The CNN accelerator was evaluated using the MNIST dataset:
 - **Single Input**: Correctly classified the input digit (`0_03.txt`) with high confidence.
 - **Sequential Inputs**: Tested with 1,000 continuous MNIST images, achieving:
@@ -122,6 +131,7 @@ The CNN accelerator was evaluated using the MNIST dataset:
 ### 3. Performance Analysis
 - Reduced memory access latency by 30% through efficient PE Array design.
 - Achieved a 40% reduction in power consumption compared to baseline designs.
+![image](https://github.com/user-attachments/assets/4e996df4-69c1-45e9-9a72-a69699c50fd3)
 
 ---
 
