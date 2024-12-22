@@ -114,6 +114,7 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 
 ### 1. Accuracy
 ![image](https://github.com/user-attachments/assets/22cacd14-76f1-4327-9d4c-06f8429576f5)
+![image](https://github.com/user-attachments/assets/4b0b72c6-0c9e-407b-9f31-2a1030a0fcff)
 
 The CNN accelerator was evaluated using the MNIST dataset:
 - **Single Input**: Correctly classified the input digit (`0_03.txt`) with high confidence.
