@@ -1,12 +1,15 @@
 # CNN Accelerator Using Reusable PE Array
 
 ## Team Name: 바투모루  
-### 경북대학교 IDEC 2024 창의 회로설계 챌린지  
-
+### 경북대학교 IDEC 2024 창의 회로설계 챌린지(Kyungpook National University IDEC 2024 Creative Circuit Design Challenge)
+### 🏆 **Awarded 2nd Place**
 ---
 
 ## 📄 Project Overview
+![image](https://github.com/user-attachments/assets/c9ba60de-b9f8-4e41-b6d4-f576e05947e3)
+
 As artificial intelligence continues to evolve, deep learning-based image recognition has emerged as a critical technology in fields like healthcare, security, and autonomous systems. Among these, Convolutional Neural Networks (CNNs) have demonstrated exceptional performance in applications such as image classification, object detection, and facial recognition. However, the computational demands of CNNs—stemming from their reliance on matrix multiplications and accumulation operations—pose significant challenges, particularly in real-time processing scenarios.
+
 
 ### Objective
 This project aims to develop a **hardware-accelerated CNN processing system** that:
@@ -40,6 +43,9 @@ By utilizing the **OpenRoad Tool** in a Linux environment, we designed, implemen
 ## 🏗️ System Architecture
 
 The proposed CNN accelerator follows a structured pipeline, with data flowing through multiple modules. Each module is optimized for specific tasks, ensuring efficient processing with minimal delays.
+
+![image](https://github.com/user-attachments/assets/c0253634-95bc-4f43-856a-2828caed87be)
+
 
 ### 1. **PE Array (Processing Element Array)**
    - The heart of the CNN accelerator, responsible for convolution operations.
