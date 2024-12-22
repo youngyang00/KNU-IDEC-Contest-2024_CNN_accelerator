@@ -3,9 +3,9 @@
 ## Team Name: 바투모루  
 ### 경북대학교 IDEC 2024 창의 회로설계 챌린지(Kyungpook National University IDEC 2024 Creative Circuit Design Challenge)
 ### 🏆 **Awarded 2nd Place**
-- This project was completed in collaboration with:  
-  - [foodinsect](https://github.com/foodinsect)  
-  - [dlwnstlr1010](https://github.com/dlwnstlr1010)  
+### Collaborators  
+- [foodinsect](https://github.com/foodinsect)  
+- [dlwnstlr1010](https://github.com/dlwnstlr1010) 
 ---
 
 ## 📄 Project Overview
