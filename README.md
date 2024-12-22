@@ -3,6 +3,9 @@
 ## Team Name: 바투모루  
 ### 경북대학교 IDEC 2024 창의 회로설계 챌린지(Kyungpook National University IDEC 2024 Creative Circuit Design Challenge)
 ### 🏆 **Awarded 2nd Place**
+- This project was completed in collaboration with:  
+  - [foodinsect](https://github.com/foodinsect)  
+  - [dlwnstlr1010](https://github.com/dlwnstlr1010)  
 ---
 
 ## 📄 Project Overview
@@ -48,6 +51,9 @@ The proposed CNN accelerator follows a structured pipeline, with data flowing th
 
 
 ### 1. **PE Array (Processing Element Array)**
+![image](https://github.com/user-attachments/assets/192f14f0-4e8b-4c11-a673-92a871b49918)
+
+
    - The heart of the CNN accelerator, responsible for convolution operations.
    - **Key Features**:
      - Shift registers store input data temporarily, allowing data reuse across multiple cycles.
